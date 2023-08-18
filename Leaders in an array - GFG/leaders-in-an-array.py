@@ -4,13 +4,12 @@ class Solution:
     #Function to find the leaders in the array.
     def leaders(self, A, N):
         #Code here
-        lst=[]
-        lst.append(A[-1])
         mx=A[-1]
-        for i in range(N-2,-1,-1):
-            if(A[i]>=mx):
-                lst.append(A[i])
+        lst=[]
+        for i in range(N-1,-1,-1):
+            if A[i]>=mx:
                 mx=A[i]
+                lst.append(mx)
         lst=lst[::-1]
         return lst
 
