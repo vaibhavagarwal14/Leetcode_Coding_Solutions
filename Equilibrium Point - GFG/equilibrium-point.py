@@ -7,11 +7,11 @@ class Solution:
     def equilibriumPoint(self,A, N):
         # Your code here
         s=sum(A)
-        left=0
+        sL=0
         for i in range(N):
-            if(left==s-A[i]):
+            if sL==s-A[i]:
                 return i+1
-            left+=A[i]
+            sL+=A[i]
             s-=A[i]
         return -1
 
