@@ -1,5 +1,10 @@
 class Solution:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
+        # Approach 1 - BF - O(n)
+        
+        # Approach 2 - BS - O(2*logn)
+        
+        # Approach 3 - BS - O(logn)
         l=0
         u=len(nums)-1
         if u==-1:
