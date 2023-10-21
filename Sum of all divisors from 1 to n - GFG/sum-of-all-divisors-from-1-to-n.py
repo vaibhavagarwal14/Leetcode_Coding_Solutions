@@ -5,11 +5,10 @@ class Solution:
     def sumOfDivisors(self, N):
     	#code here 
     	s=0
-    	for i in range(1,N+1):
-    	    d=N//i
-    	    s+=i*d
-    	return s
-
+        for i in range(1,N+1):
+            d=N//i
+            s+=i*d
+        return s
 
 #{ 
  # Driver Code Starts
